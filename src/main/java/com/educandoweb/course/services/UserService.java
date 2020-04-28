@@ -22,7 +22,8 @@ public class UserService {
 	private UserRepository repository;
 
 	public List<User> findAll() {
-		return repository.findAll();
+		List<User> list = repository.findAll();
+		return  list;
 	}
 
 	public User findById(Long id) {
